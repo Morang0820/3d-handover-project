@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bridging Time and Space in 3D Product Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── nav ── -->
+<nav>
+  <div class="container">
+    <a class="nav-logo" href="#">3D Handover · KAIST</a>
+    <ul class="nav-links">
+      <li><a href="#abstract">Abstract</a></li>
+      <li><a href="#system">System</a></li>
+      <li><a href="#prototype">Prototype</a></li>
+      <li><a href="#evaluation">Evaluation</a></li>
+      <li><a href="#references">References</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── hero ── -->
+<header class="hero">
+  <div class="container">
+    <p class="hero-venue">GCT555 · 3D Interaction Design · KAIST 2025</p>
+    <h1>Bridging Time and Space<br>in 3D Product Design</h1>
+    <div class="authors">
+      <span class="author-chip">Kun-Woo Song</span>
+      <span class="author-chip">Byunghyun Kim</span>
+      <span class="author-chip">Yuna Choi</span>
+    </div>
+    <p class="affil">Graduate School of Culture Technology, KAIST — Daejeon, Korea</p>
+    <div class="hero-links">
+      <!-- ✏️ href를 실제 PDF 경로 또는 URL로 교체하세요 -->
+      <a href="assets/paper.pdf" class="btn btn-primary" target="_blank">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Paper PDF
+      </a>
+      <!-- ✏️ href를 실제 GitHub repo URL로 교체하세요 -->
+      <a href="https://github.com/EDIT_THIS/REPO" class="btn btn-secondary" target="_blank">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        Code
+      </a>
+      <a href="#evaluation" class="btn btn-secondary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Evaluation Plan
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ── teaser image ── -->
+<div class="container">
+  <figure class="teaser">
+    <!-- ✏️ 이미지 추가 시: 아래 주석 해제하고 placeholder div를 삭제하세요 -->
+    <!-- <img src="assets/teaser.png" alt="Project overview showing the challenge, proposed solution, user flow, and technology enablers." /> -->
+    <div class="teaser-img-placeholder">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <span>assets/teaser.png 이미지를 추가하세요</span>
+    </div>
+    <figcaption><strong>Figure 1.</strong> Project overview: the challenge, proposed solution, user flow, and technology enablers. The system supports 3D product designers in reviewing spatial design history through a 2D-to-3D interaction flow using an LED Wall and Meta Quest 3 HMD.</figcaption>
+  </figure>
+</div>
+
+<!-- ── 01 abstract ── -->
+<section class="section" id="abstract">
+  <div class="container">
+    <p class="section-label">01 — Abstract</p>
+    <h2>Abstract</h2>
+    <div class="abstract-box">
+      <p>We propose a low-stimulation asynchronous handover framework for 3D product designers collaborating across time zones. Existing asynchronous handoff tools rely on 2D logs or passive video recordings, which fail to convey spatial relationships and design intent. Replacing these with full 3D recordings reviewed inside an HMD introduces cybersickness and cognitive overload from rapid immersive scrubbing.</p>
+      <p style="margin-bottom:0">Our system addresses both problems simultaneously. An LED Wall provides a low-fatigue 2D overview for the majority of review time, while HMD interaction is reserved for short, purposeful, on-demand 3D inspection. Designers navigate a spatial design history timeline using a mid-air dial gesture with visual and haptic cues, then pull moments into 3D space for closer inspection before returning to the 2D flow.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── 02 system ── -->
+<section class="section" id="system">
+  <div class="container">
+    <p class="section-label">02 — System</p>
+    <h2>Interaction Design</h2>
+    <p>The interaction follows a four-step flow that keeps immersive use short and purposeful, reducing cybersickness while preserving the spatial richness of 3D design history.</p>
+
+    <div class="flow-steps">
+      <div class="flow-step">
+        <p class="flow-num">STEP 01</p>
+        <p class="flow-title">Browse timeline</p>
+        <p class="flow-desc">Scroll through keyframes on the LED Wall using a mid-air dial gesture (wrist rotation).</p>
+      </div>
+      <div class="flow-step">
+        <p class="flow-num">STEP 02</p>
+        <p class="flow-title">Receive cues</p>
+        <p class="flow-desc">Visual flash and haptic pulse fire simultaneously at each keyframe, drawing attention without conscious effort.</p>
+      </div>
+      <div class="flow-step">
+        <p class="flow-num">STEP 03</p>
+        <p class="flow-title">Inspect in 3D</p>
+        <p class="flow-desc">Pull a moment into 3D space via a pull-to-spawn gesture for closer spatial inspection.</p>
+      </div>
+      <div class="flow-step">
+        <p class="flow-num">STEP 04</p>
+        <p class="flow-title">Return to 2D</p>
+        <p class="flow-desc">Push-to-dismiss sends the object back; resume 2D timeline scrubbing.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:48px">Multimodal Cue Design</h2>
+    <p>Four cue events are defined with uniform intensity across all keyframes. Channels are separated: visual handles continuous state, haptic handles immediate event alerts, and audio is reserved for out-of-FoV events only.</p>
+
+    <div class="cue-grid">
+      <div class="cue-card">
+        <p class="cue-event">Keyframe arrival</p>
+        <div class="cue-row"><span class="cue-ch">Visual</span><span class="tag visual">Flash / halo</span></div>
+        <div class="cue-row"><span class="cue-ch">Haptic</span><span class="tag haptic">Single pulse</span></div>
+        <div class="cue-row"><span class="cue-ch">Audio</span><span class="tag audio">Off</span></div>
+      </div>
+      <div class="cue-card">
+        <p class="cue-event">Overshoot</p>
+        <div class="cue-row"><span class="cue-ch">Visual</span><span class="tag visual">Rebound marker</span></div>
+        <div class="cue-row"><span class="cue-ch">Haptic</span><span class="tag haptic">Ramp fade-out</span></div>
+        <div class="cue-row"><span class="cue-ch">Audio</span><span class="tag audio">Low click</span></div>
+      </div>
+      <div class="cue-card">
+        <p class="cue-event">Boundary</p>
+        <div class="cue-row"><span class="cue-ch">Visual</span><span class="tag visual">Boundary glow</span></div>
+        <div class="cue-row"><span class="cue-ch">Haptic</span><span class="tag haptic">Ramp fade-in</span></div>
+        <div class="cue-row"><span class="cue-ch">Audio</span><span class="tag audio">Short tone</span></div>
+      </div>
+      <div class="cue-card">
+        <p class="cue-event">3D entry / exit</p>
+        <div class="cue-row"><span class="cue-ch">Visual</span><span class="tag visual">Scene transition</span></div>
+        <div class="cue-row"><span class="cue-ch">Haptic</span><span class="tag haptic">Short double pulse</span></div>
+        <div class="cue-row"><span class="cue-ch">Audio</span><span class="tag audio">Off</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 03 prototype ── -->
+<section class="section" id="prototype">
+  <div class="container">
+    <p class="section-label">03 — Prototype</p>
+    <h2>Prototype</h2>
+    <p>The prototype implements the full interaction pipeline on a physical LED Wall with a Meta Quest 3 HMD. Three input methods are compared: pinch gesture, controller, and the proposed mid-air dial (wrist rotation). All three control the same 3D timeline bar. Haptic feedback is delivered via bHaptics Tactgloves (Unity 6000.3.4f1).</p>
+
+    <div class="proto-grid">
+      <div class="proto-item">
+        <!-- ✏️ <img src="assets/proto-pinch.jpg" alt="Pinch gesture" /> 로 교체하세요 -->
+        <div class="proto-img-ph">proto-pinch.jpg</div>
+        <p class="proto-label">Pinch gesture</p>
+      </div>
+      <div class="proto-item">
+        <!-- ✏️ <img src="assets/proto-controller.jpg" alt="Controller input" /> 로 교체하세요 -->
+        <div class="proto-img-ph">proto-controller.jpg</div>
+        <p class="proto-label">Controller</p>
+      </div>
+      <div class="proto-item">
+        <!-- ✏️ <img src="assets/proto-dial.jpg" alt="Dial metaphor" /> 로 교체하세요 -->
+        <div class="proto-img-ph">proto-dial.jpg</div>
+        <p class="proto-label">Dial metaphor</p>
+      </div>
+    </div>
+    <p style="margin-top:16px; font-size:13px; color:var(--text-muted)"><em>Left: pinch gesture. Center: controller. Right: proposed mid-air dial.</em></p>
+  </div>
+</section>
+
+<!-- ── 04 evaluation ── -->
+<section class="section" id="evaluation">
+  <div class="container">
+    <p class="section-label">04 — Evaluation</p>
+    <h2>Evaluation Plan</h2>
+    <p>The experiment adopts a <strong>3×2 within-subjects factorial design</strong>, crossing three input methods with two cue conditions (6 conditions total). Participants: <em>N</em> = 8 adults aged 20–35 (pilot study); 5 trials per condition, 30 trials total.</p>
+
+    <table class="condition-table">
+      <thead>
+        <tr><th></th><th>No cue</th><th>Visual + haptic cue</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Controller</strong></td><td class="baseline">A — baseline</td><td>B</td></tr>
+        <tr><td><strong>Pinch</strong></td><td>C</td><td>D</td></tr>
+        <tr><td><strong>Dial</strong></td><td>E</td><td class="proposed">F — proposed</td></tr>
+      </tbody>
+    </table>
+
+    <h2 style="margin-top:40px">Metrics</h2>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <span class="metric-abbr">TKAT</span>
+        <p class="metric-name">Target Keyframe Acquisition Time</p>
+        <p class="metric-desc">Time (ms) from trial start to successful arrival at the target keyframe. Adapted from Fitts [1].</p>
+      </div>
+      <div class="metric-card">
+        <span class="metric-abbr">Overshoot</span>
+        <p class="metric-name">Overshoot Rate</p>
+        <p class="metric-desc">Frequency of passing a keyframe without stopping (count per trial).</p>
+      </div>
+      <div class="metric-card">
+        <span class="metric-abbr">WRS</span>
+        <p class="metric-name">Workflow Reconstruction Score</p>
+        <p class="metric-desc">Card sorting + comprehension questions testing accuracy of sequence reconstruction. Adapted from Gou et al. [3].</p>
+      </div>
+      <div class="metric-card">
+        <span class="metric-abbr">NASA-TLX</span>
+        <p class="metric-name">Cognitive Load</p>
+        <p class="metric-desc">Subjective load (0–100) across 6 subscales. Reference delta: ~14 pts between AR+haptic vs. AR-only [11].</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 05 references ── -->
+<section class="section" id="references">
+  <div class="container">
+    <p class="section-label">05 — References</p>
+    <h2>References</h2>
+    <div class="ref-list">
+      <div class="ref-item"><span class="ref-num">[1]</span><span>Paul M. Fitts. 1954. The information capacity of the human motor system in controlling the amplitude of movement. <em>Journal of Experimental Psychology</em> 47, 6, 381–391.</span></div>
+      <div class="ref-item"><span class="ref-num">[2]</span><span>Melvyn A. Goodale and A. David Milner. 1992. Separate visual pathways for perception and action. <em>Trends in Neurosciences</em> 15, 1, 20–25.</span></div>
+      <div class="ref-item"><span class="ref-num">[3]</span><span>Zhengtai Gou et al. 2026. Evaluating Replay Techniques for Asynchronous Task Handover in Immersive Analytics. <em>arXiv:2602.18978</em>. <a href="https://arxiv.org/abs/2602.18978" target="_blank">arXiv</a></span></div>
+      <div class="ref-item"><span class="ref-num">[4]</span><span>Sandra G. Hart and Lowell E. Staveland. 1988. Development of NASA-TLX. <em>Advances in Psychology</em>, Vol. 52.</span></div>
+      <div class="ref-item"><span class="ref-num">[5]</span><span>Laurent Itti and Christof Koch. 2001. Computational modelling of visual attention. <em>Nature Reviews Neuroscience</em> 2, 3, 194–203.</span></div>
+      <div class="ref-item"><span class="ref-num">[6]</span><span>Ann M. Larson and Lester C. Loschky. 2009. The contributions of central versus peripheral vision to scene gist recognition. <em>Journal of Vision</em> 9, 10.</span></div>
+      <div class="ref-item"><span class="ref-num">[7]</span><span>Joseph J. LaViola et al. 2017. <em>3D User Interfaces: Theory and Practice</em> (2nd ed.). Addison-Wesley.</span></div>
+      <div class="ref-item"><span class="ref-num">[8]</span><span>Zhuoyue Lyu and Per Ola Kristensson. 2026. Objestures: Everyday Objects Meet Mid-Air Gestures for Expressive Interaction. <em>CHI '26</em>. ACM.</span></div>
+      <div class="ref-item"><span class="ref-num">[9]</span><span>Gary Perelman et al. 2025. 3D timelines in VR: Adaptive speed for 3D data navigation on a concave timeline. <em>IJHCS</em>.</span></div>
+      <div class="ref-item"><span class="ref-num">[10]</span><span>Xizi Wang et al. 2026. To Slide or Not to Slide. <em>arXiv:2602.19048</em>. <a href="https://arxiv.org/abs/2602.19048" target="_blank">arXiv</a></span></div>
+      <div class="ref-item"><span class="ref-num">[11]</span><span>Yue Yang et al. 2026. Multimodal Feedback for Handheld Tool Guidance. <em>arXiv:2601.12037</em>. <a href="https://arxiv.org/abs/2601.12037" target="_blank">arXiv</a></span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Bridging Time and Space in 3D Product Design — Kun-Woo Song, Byunghyun Kim, Yuna Choi — KAIST GSCT 2025</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
