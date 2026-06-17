@@ -4,152 +4,149 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bridging Time and Space in 3D Product Design</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ════════════════════════════════════════
-     NAV
-════════════════════════════════════════ -->
-<nav>
-  <div class="container">
-    <a class="nav-logo" href="#">3D Handover · KAIST</a>
-    <ul class="nav-links">
+<!-- NAV -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-brand" href="#">Bridging Time &amp; Space</a>
+    <ul class="navbar-menu">
       <li><a href="#abstract">Abstract</a></li>
       <li><a href="#system">System</a></li>
       <li><a href="#prototype">Prototype</a></li>
       <li><a href="#evaluation">Evaluation</a></li>
       <li><a href="#results">Results</a></li>
       <li><a href="#discussion">Discussion</a></li>
-      <li><a href="#references">References</a></li>
+      <li><a href="#bibtex">BibTeX</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ════════════════════════════════════════
-     HERO
-════════════════════════════════════════ -->
-<header class="hero">
-  <div class="container">
-    <p class="hero-venue">GCT555 · 3D Interaction Design · KAIST 2025</p>
-    <h1>Bridging Time and Space<br>in 3D Product Design</h1>
-    <div class="authors">
-      <span class="author-chip">Kun-Woo Song</span>
-      <span class="author-chip">Byunghyun Kim</span>
-      <span class="author-chip">Yuna Choi</span>
-    </div>
-    <p class="affil">Graduate School of Culture Technology, KAIST — Daejeon, Korea</p>
-    <div class="hero-links">
-      <!-- ✏️ href를 실제 PDF 경로로 교체하세요 -->
-      <a href="assets/paper.pdf" class="btn btn-primary" target="_blank">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-        Paper PDF
-      </a>
-      <!-- ✏️ href를 실제 GitHub repo URL로 교체하세요 -->
-      <a href="https://github.com/EDIT_THIS/REPO" class="btn btn-secondary" target="_blank">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-        Code
-      </a>
-      <a href="#results" class="btn btn-secondary">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        Results
-      </a>
-    </div>
+<!-- HERO -->
+<section class="hero-section">
+  <h1 class="publication-title">
+    Bridging Time and Space<br>in 3D Product Design
+  </h1>
+
+  <div class="publication-authors">
+    <span class="author-block">Kun-Woo Song</span>
+    <span class="author-block">Byunghyun Kim</span>
+    <span class="author-block">Yuna Choi</span>
   </div>
-</header>
 
-<!-- ════════════════════════════════════════
-     TEASER + VIDEO
-════════════════════════════════════════ -->
-<div class="container">
+  <div class="publication-venue">
+    <span class="venue-tag">GCT555 · 3D Interaction Design · KAIST 2025</span>
+  </div>
 
-  <!-- Teaser figure -->
-  <figure class="teaser">
+  <div class="link-buttons">
+    <!-- ✏️ href를 실제 PDF 경로로 교체하세요 -->
+    <a href="assets/paper.pdf" class="link-btn is-dark" target="_blank">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      Paper
+    </a>
+    <!-- ✏️ href를 실제 GitHub repo URL로 교체하세요 -->
+    <a href="https://github.com/EDIT_THIS/REPO" class="link-btn" target="_blank">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      Code
+    </a>
+    <a href="#results" class="link-btn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Results
+    </a>
+    <a href="#bibtex" class="link-btn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      BibTeX
+    </a>
+  </div>
+</section>
+
+<!-- TEASER -->
+<section class="teaser-section">
+  <div class="container">
     <img src="assets/fig_overview.png" alt="Project overview showing the challenge, proposed solution, user flow, and technology enablers." />
-    <figcaption><strong>Figure 1.</strong> Project overview showing the challenge, proposed solution, user flow, and technology enablers. The system supports 3D product designers in reviewing spatial design history through a 2D-to-3D interaction flow.</figcaption>
-  </figure>
-
-  <!-- Demo videos (side by side) -->
-  <!-- ✏️ YouTube 영상 ID를 아래 두 곳에 넣으세요 (THIRD_PERSON_VIDEO_ID, FIRST_PERSON_VIDEO_ID) -->
-  <div class="video-pair">
-    <div class="video-item">
-      <iframe src="https://www.youtube.com/embed/npCW8I55c1s" allowfullscreen></iframe>
-      <p class="video-caption"><strong>Third-person view.</strong> System walkthrough as seen from outside the interaction space.</p>
-    </div>
-    <div class="video-item">
-      <iframe src="https://www.youtube.com/embed/owV9Q8sfAHo" allowfullscreen></iframe>
-      <p class="video-caption"><strong>First-person view.</strong> HMD passthrough perspective during timeline navigation and 3D inspection.</p>
-    </div>
+    <p class="teaser-caption">
+      <strong>Project Overview.</strong> The system supports 3D product designers in reviewing spatial design history through a 2D-to-3D interaction flow using an LED Wall and Meta Quest 3 HMD.
+    </p>
   </div>
+</section>
 
-</div><!-- /container -->
-
-<!-- ════════════════════════════════════════
-     01  ABSTRACT
-════════════════════════════════════════ -->
-<section class="section" id="abstract">
+<!-- DEMO VIDEOS -->
+<section class="video-section" id="video">
   <div class="container">
-    <p class="section-label">01 — Abstract</p>
-    <h2>Abstract</h2>
-    <div class="abstract-box">
-      <p>Three-dimensional product design increasingly relies on asynchronous collaboration across distributed teams and time zones. When a designer begins a new shift, they must review hours of spatial work completed by a remote colleague — understanding what changed, when, and why — before contributing their own work. Existing tools fall short: 2D logs and passive video recordings fail to convey spatial relationships, while full immersive 3D recordings viewed in an HMD cause cybersickness and cognitive overload from rapid scrubbing.</p>
-      <p style="margin-bottom:0">We present a hybrid LED Wall + HMD system that addresses both limitations simultaneously. Designers navigate a 2D keyframe timeline using a mid-air dial gesture and receive visual and haptic cues at keyframes. When a keyframe warrants closer inspection, the designer pulls the corresponding 3D object into the HMD view for immersive examination, then pushes it back to return to 2D navigation. A 3×2 within-subjects pilot study (<em>N</em> = 6) comparing controller, pinch, and dial inputs with and without multimodal cues reveals a compelling dichotomy between objective efficiency and subjective preference, with important implications for XR temporal navigation design.</p>
+    <h2 class="section-title">Demo Video</h2>
+    <!-- ✏️ THIRD_PERSON_VIDEO_ID / FIRST_PERSON_VIDEO_ID 를 실제 YouTube ID로 교체하세요 -->
+    <div class="video-pair">
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/THIRD_PERSON_VIDEO_ID" allowfullscreen></iframe>
+        <p class="video-caption-text">Third-person view</p>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/FIRST_PERSON_VIDEO_ID" allowfullscreen></iframe>
+        <p class="video-caption-text">First-person (HMD passthrough) view</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════════════════════════════════
-     02  SYSTEM
-════════════════════════════════════════ -->
+<!-- ABSTRACT -->
+<section class="section is-light" id="abstract">
+  <div class="container">
+    <h2 class="section-title">Abstract</h2>
+    <div class="abstract-content">
+      <p>Three-dimensional product design increasingly relies on asynchronous collaboration across distributed teams and time zones. When a designer begins a new shift, they must review hours of spatial work completed by a remote colleague — understanding what changed, when, and why — before contributing their own work. Existing tools fall short: 2D logs and passive video recordings fail to convey spatial relationships, while full immersive 3D recordings viewed in an HMD cause cybersickness and cognitive overload from rapid scrubbing.</p>
+      <p>We present a hybrid LED Wall + HMD system that addresses both limitations simultaneously. Designers navigate a 2D keyframe timeline using a mid-air dial gesture and receive visual and haptic cues at keyframes. When a keyframe warrants closer inspection, the designer pulls the corresponding 3D object into the HMD view for immersive examination, then pushes it back to return to 2D navigation. A 3×2 within-subjects pilot study (<em>N</em> = 6) comparing controller, pinch, and dial inputs with and without multimodal cues reveals a compelling dichotomy between objective efficiency and subjective preference, with important implications for XR temporal navigation design.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SYSTEM -->
 <section class="section" id="system">
   <div class="container">
-    <p class="section-label">02 — System</p>
-    <h2>Interaction Design</h2>
+    <h2 class="section-title">System &amp; Interaction Design</h2>
+
     <p>The interaction follows a four-step flow that keeps immersive use short and purposeful, reducing cybersickness while preserving the spatial richness of 3D design history.</p>
 
-    <div class="flow-steps">
-      <div class="flow-step">
-        <p class="flow-num">STEP 01</p>
+    <div class="flow-grid">
+      <div class="flow-card">
+        <p class="flow-num">Step 01</p>
         <p class="flow-title">Browse timeline</p>
         <p class="flow-desc">Scroll through keyframes on the LED Wall using a mid-air dial gesture (wrist rotation).</p>
       </div>
-      <div class="flow-step">
-        <p class="flow-num">STEP 02</p>
+      <div class="flow-card">
+        <p class="flow-num">Step 02</p>
         <p class="flow-title">Receive cues</p>
-        <p class="flow-desc">Visual flash and haptic pulse fire simultaneously at each keyframe, drawing attention without conscious effort.</p>
+        <p class="flow-desc">Visual flash and haptic pulse fire simultaneously at each keyframe without conscious effort.</p>
       </div>
-      <div class="flow-step">
-        <p class="flow-num">STEP 03</p>
+      <div class="flow-card">
+        <p class="flow-num">Step 03</p>
         <p class="flow-title">Inspect in 3D</p>
         <p class="flow-desc">Pull a moment into 3D space via a pull-to-spawn gesture for closer spatial inspection in the HMD.</p>
       </div>
-      <div class="flow-step">
-        <p class="flow-num">STEP 04</p>
+      <div class="flow-card">
+        <p class="flow-num">Step 04</p>
         <p class="flow-title">Return to 2D</p>
         <p class="flow-desc">Push-to-dismiss sends the object back; resume 2D timeline scrubbing.</p>
       </div>
     </div>
 
-    <!-- Interaction flow figure -->
-    <figure class="fig">
+    <figure class="paper-fig">
       <img src="assets/fig_interaction_flow.png" alt="Interaction flow diagram" />
       <figcaption><strong>Figure 3.</strong> Interaction flow diagram: the user begins with 2D overview scrolling on the LED Wall, navigates via mid-air dial control, and receives visual and haptic cues at keyframe events. When closer inspection is needed, the user pulls content into a 3D view and returns to 2D on completion.</figcaption>
     </figure>
 
-    <h3>Cognitive Design Rationale</h3>
+    <h3 class="section-subtitle">Cognitive Design Rationale</h3>
     <p>The system separates ventral stream processing (object recognition via foveal keyframe content) from dorsal stream processing (gesture and haptic events), preventing a single channel from being overloaded during simultaneous navigation and content recognition. Keyframe content occupies the foveal zone (0–5°); visual flash cues fire in the parafoveal zone (5–15°) without requiring a saccade; and the full LED Wall timeline provides peripheral context (15°+).</p>
     <p>Three cognitive load principles from LaViola et al. are applied: a staged approach (2D overview first, 3D only on demand), a physical metaphor (wrist rotation maps intuitively to timeline scrubbing), and haptic offloading (keyframe arrival delivered through touch, freeing the visual channel for content).</p>
 
-    <!-- 3D UI placement figure -->
-    <figure class="fig">
+    <figure class="paper-fig">
       <img src="assets/fig_3dui_diagram.png" alt="3D UI placement diagram" />
       <figcaption><strong>Figure 2.</strong> 3D UI placement diagram showing the Video Time Bar in the parafoveal zone at 1.8–2.2 m, the LED Wall at 2.5–3.0 m, and baseline interaction methods (pinch, controller, dial metaphor).</figcaption>
     </figure>
 
-    <h3>Multimodal Cue Design</h3>
+    <h3 class="section-subtitle">Multimodal Cue Design</h3>
     <p>Four cue events are defined with uniform intensity across all keyframes. Visual feedback handles continuous state; haptic feedback handles immediate event alerts; audio is reserved for out-of-FoV events only.</p>
 
     <div class="cue-grid">
@@ -178,63 +175,57 @@
         <div class="cue-row"><span class="cue-ch">Audio</span><span class="tag audio">Off</span></div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ════════════════════════════════════════
-     03  PROTOTYPE
-════════════════════════════════════════ -->
-<section class="section" id="prototype">
+<!-- PROTOTYPE -->
+<section class="section is-light" id="prototype">
   <div class="container">
-    <p class="section-label">03 — Prototype</p>
-    <h2>Prototype</h2>
+    <h2 class="section-title">Prototype</h2>
     <p>The prototype implements the full interaction pipeline on a physical LED Wall with a Meta Quest 3 HMD (Unity 6000.3.4f1). Three input methods are compared: pinch gesture, controller, and the proposed mid-air dial (wrist rotation). All three control the same 3D timeline bar. Haptic feedback is delivered via bHaptics Tactgloves.</p>
-    <p>The dial gesture evolved from an initial design using crunched fingers with slight flexion, which caused hand-tracking errors with haptic gloves, to a final design using pinch (index and thumb flexion) for more reliable tracking. The pull-to-spawn / push-to-dismiss interactions are triggered via pinch + z-axis hand movement.</p>
+    <p>The dial gesture evolved from an initial design using crunched fingers with slight flexion — which caused hand-tracking errors with haptic gloves — to a final design using pinch (index and thumb flexion) for more reliable tracking. The pull-to-spawn / push-to-dismiss interactions are triggered via pinch combined with z-axis hand movement.</p>
 
-    <figure class="fig" style="margin-top:24px">
+    <figure class="paper-fig">
       <img src="assets/fig_prototype_input.png" alt="Three interaction methods: pinch, controller, dial metaphor" />
       <figcaption><strong>Figure 4.</strong> Prototype screenshots of the three interaction methods: (left) pinch gesture, (center) controller, (right) dial metaphor. All three control the same 3D timeline bar.</figcaption>
     </figure>
-    <!-- Feedback states figure -->
-    <figure class="fig" style="margin-top:28px">
+
+    <figure class="paper-fig">
       <img src="assets/fig_prototype_feedback.png" alt="Multimodal feedback states" />
       <figcaption><strong>Figure 5.</strong> Prototype screenshots of multimodal feedback states. Visual: normal (white), target reached (green), target overshot (orange), boundary (red). Haptic: fade-in/out patterns per event type.</figcaption>
     </figure>
-
   </div>
 </section>
 
-<!-- ════════════════════════════════════════
-     04  EVALUATION
-════════════════════════════════════════ -->
+<!-- EVALUATION -->
 <section class="section" id="evaluation">
   <div class="container">
-    <p class="section-label">04 — Evaluation</p>
-    <h2>Evaluation Plan</h2>
+    <h2 class="section-title">Evaluation</h2>
 
-    <h3>System Evaluation</h3>
+    <h3 class="section-subtitle">System Evaluation</h3>
     <p>System performance was evaluated across two latency dimensions prior to the user study.</p>
     <div class="info-box">
       <strong>Hand tracking latency (Meta Quest 3):</strong> Average positional error 1.11 cm; latency range 14.4–220.5 ms. Intermittent spikes toward 220 ms risk disrupting perceived continuity of the dial gesture during fine-grained scrubbing.<br><br>
       <strong>LED Wall display latency:</strong> ~70 ms (measured via debug logging). Cumulative end-to-end latency may be perceptible during rapid navigation and is a non-trivial confound for overshoot rates.
     </div>
 
-    <h3>User Study Design</h3>
+    <h3 class="section-subtitle">User Study Design</h3>
     <p>The experiment adopts a <strong>3×2 within-subjects factorial design</strong>, crossing three input methods with two cue conditions (6 conditions total). Participants: <em>N</em> = 6 adults aged 20–35 (pilot study); 5 trials per condition, 30 trials total. Statistical analysis used ART ANOVA for parametric metrics and the Friedman test for ordinal data (α = 0.05).</p>
 
-    <table class="condition-table">
-      <thead>
-        <tr><th></th><th>No cue</th><th>Visual + haptic cue</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>Controller</strong></td><td class="baseline">A — baseline</td><td>B</td></tr>
-        <tr><td><strong>Pinch</strong></td><td>C</td><td>D</td></tr>
-        <tr><td><strong>Dial</strong></td><td>E</td><td class="proposed">F — proposed</td></tr>
-      </tbody>
-    </table>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th></th><th>No cue</th><th>Visual + haptic cue</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Controller</strong></td><td class="cell-baseline">A — baseline</td><td>B</td></tr>
+          <tr><td><strong>Pinch</strong></td><td>C</td><td>D</td></tr>
+          <tr><td><strong>Dial</strong></td><td>E</td><td class="cell-proposed">F — proposed</td></tr>
+        </tbody>
+      </table>
+    </div>
 
-    <h3>Metrics</h3>
+    <h3 class="section-subtitle">Metrics</h3>
     <div class="metrics-grid">
       <div class="metric-card">
         <span class="metric-abbr">TKAT</span>
@@ -249,7 +240,7 @@
       <div class="metric-card">
         <span class="metric-abbr">WRS</span>
         <p class="metric-name">Workflow Reconstruction Score</p>
-        <p class="metric-desc">Card sorting + comprehension questions testing accuracy of sequence reconstruction. Adopted from Gou et al. [3].</p>
+        <p class="metric-desc">Card sorting + comprehension questions. Adopted from Gou et al. [3].</p>
       </div>
       <div class="metric-card">
         <span class="metric-abbr">NASA-TLX</span>
@@ -257,21 +248,16 @@
         <p class="metric-desc">Subjective load (0–100) across 6 subscales. Reference delta: ~14 pts between AR+haptic vs. AR-only [11].</p>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ════════════════════════════════════════
-     05  RESULTS
-════════════════════════════════════════ -->
-<section class="section" id="results">
+<!-- RESULTS -->
+<section class="section is-light" id="results">
   <div class="container">
-    <p class="section-label">05 — Results</p>
-    <h2>User Evaluation Results</h2>
+    <h2 class="section-title">Results</h2>
 
-    <h3>Task Completion Time</h3>
+    <h3 class="section-subtitle">Task Completion Time</h3>
     <p>ART ANOVA revealed a highly significant main effect of input modality on completion time (<em>F</em>(2, 30) = 12.214, <em>p</em> &lt; .001, η²<sub>p</sub> = 0.449 — large effect).</p>
-
     <div class="compare-row">
       <div class="compare-cell best">
         <p class="compare-modality">Controller</p>
@@ -281,27 +267,25 @@
       <div class="compare-cell">
         <p class="compare-modality">Pinch</p>
         <p class="compare-val">1,961 ms</p>
-        <p class="compare-sub">SD — mid</p>
+        <p class="compare-sub">mid</p>
       </div>
       <div class="compare-cell worst">
         <p class="compare-modality">Dial</p>
         <p class="compare-val">2,307 ms</p>
-        <p class="compare-sub">SD — slowest</p>
+        <p class="compare-sub">slowest</p>
       </div>
     </div>
-
     <div class="finding">
-      Post-hoc (Tukey's HSD): controller was significantly faster than both dial (<em>p</em> &lt; .001) and pinch (<em>p</em> &lt; .001). No significant difference between dial and pinch (<em>p</em> = .824). <strong>Feedback presence had no significant effect on completion time</strong> (<em>p</em> = .896), and no interaction effect was observed.
+      Post-hoc (Tukey's HSD): controller significantly faster than both dial (<em>p</em> &lt; .001) and pinch (<em>p</em> &lt; .001). No significant difference between dial and pinch (<em>p</em> = .824). <strong>Feedback presence had no significant effect on completion time</strong> (<em>p</em> = .896).
     </div>
 
-    <h3>Overshoot Rate</h3>
-    <p>A similarly strong main effect of modality was found for targeting accuracy (<em>F</em>(2, 30) = 15.281, <em>p</em> &lt; .001, η²<sub>p</sub> = 0.505).</p>
-
+    <h3 class="section-subtitle">Overshoot Rate</h3>
+    <p>Strong main effect of modality on targeting accuracy (<em>F</em>(2, 30) = 15.281, <em>p</em> &lt; .001, η²<sub>p</sub> = 0.505).</p>
     <div class="compare-row">
       <div class="compare-cell best">
         <p class="compare-modality">Controller</p>
         <p class="compare-val">0.23</p>
-        <p class="compare-sub">SD = 0.26 · fewest overshoots</p>
+        <p class="compare-sub">SD = 0.26 · fewest</p>
       </div>
       <div class="compare-cell worst">
         <p class="compare-modality">Pinch</p>
@@ -314,67 +298,44 @@
         <p class="compare-sub">most overshoots</p>
       </div>
     </div>
-
     <div class="finding">
-      Activating sensory feedback descriptively reduced overshoots across all modalities (M = 0.93 → 0.75), but this reduction was <strong>not statistically significant</strong> (<em>F</em>(1, 30) = 1.679, <em>p</em> = .204).
+      Activating feedback descriptively reduced overshoots (M = 0.93 → 0.75), but the reduction was <strong>not statistically significant</strong> (<em>F</em>(1, 30) = 1.679, <em>p</em> = .204).
     </div>
 
-    <h3>Subjective Workload (NASA-TLX)</h3>
-    <p>Despite the controller's objective superiority, no statistically significant main effects were found for either modality or feedback across any NASA-TLX subscale (<em>p</em> &gt; .05 for all). However, effect size analysis revealed meaningful practical differences:</p>
+    <h3 class="section-subtitle">Subjective Workload (NASA-TLX)</h3>
+    <p>No statistically significant main effects for either modality or feedback across any NASA-TLX subscale (<em>p</em> &gt; .05 for all). However, effect size analysis revealed meaningful practical differences:</p>
     <div class="stat-grid">
       <div class="stat-card">
         <p class="stat-value">0.117</p>
-        <p class="stat-label">η²<sub>p</sub> for Physical Demand</p>
-        <p class="stat-condition">medium-to-large effect</p>
+        <p class="stat-label">η²<sub>p</sub> for Physical Demand (medium-to-large)</p>
       </div>
-      <div class="stat-card highlight">
+      <div class="stat-card">
         <p class="stat-value">Pinch</p>
-        <p class="stat-label">highest physical demand — susceptible to fatigue in sustained use</p>
-      </div>
-    </div>
-    <p style="margin-top:16px">No significant differences were found in perceived Intuitiveness (<em>p</em> = .742) or Ease of Use (<em>p</em> = .560), though the dial descriptively maintained the highest ratings for both.</p>
-
-    <h3>Spatial Disturbance &amp; Target Acquisition</h3>
-    <p>Friedman tests showed moderate-to-large effect sizes, though not reaching significance at α = .05.</p>
-    <div class="stat-grid">
-      <div class="stat-card">
-        <p class="stat-value">W = 0.408</p>
-        <p class="stat-label">Perceived difficulty of finding targets<br>χ²(2) = 4.90, p = .086</p>
-        <p class="stat-condition">Pinch easiest (M=3.00)</p>
-      </div>
-      <div class="stat-card">
-        <p class="stat-value">W = 0.389</p>
-        <p class="stat-label">Environmental disturbance<br>χ²(2) = 4.66, p = .097</p>
-        <p class="stat-condition">Controller most disruptive (M=4.67)</p>
+        <p class="stat-label">Highest physical demand — susceptible to fatigue in sustained use</p>
       </div>
     </div>
 
-    <h3>Modality-Dependent Feedback Effect (Question Score)</h3>
-    <p>While main effects were negligible, a large interaction effect between modality and feedback was found for Question Score (<em>F</em>(2, 30) = 2.656, <em>p</em> = .086, η²<sub>p</sub> = 0.150).</p>
-
+    <h3 class="section-subtitle">Modality-Dependent Feedback Effect</h3>
+    <p>A large interaction effect between modality and feedback for Question Score (<em>F</em>(2, 30) = 2.656, <em>p</em> = .086, η²<sub>p</sub> = 0.150):</p>
     <div class="finding">
-      Adding feedback <strong>improved</strong> scores for Controller (1.83 → 2.33) and Pinch (1.67 → 2.00), but <strong>actively decreased</strong> scores for Dial (2.33 → 1.50). This suggests a sensory conflict: artificial feedback may clash with the dial's strong inherent physical metaphor.
+      Adding feedback <strong>improved</strong> scores for Controller (1.83 → 2.33) and Pinch (1.67 → 2.00), but <strong>actively decreased</strong> scores for Dial (2.33 → 1.50). Artificial feedback may clash with the dial's strong inherent physical metaphor, causing sensory conflict rather than assistance.
     </div>
-
   </div>
 </section>
 
-<!-- ════════════════════════════════════════
-     06  DISCUSSION
-════════════════════════════════════════ -->
+<!-- DISCUSSION -->
 <section class="section" id="discussion">
   <div class="container">
-    <p class="section-label">06 — Discussion</p>
-    <h2>Discussion</h2>
+    <h2 class="section-title">Discussion</h2>
 
-    <h3>Performance vs. Preference</h3>
-    <p>The most striking result is the disconnect between objective efficiency and subjective experience. The controller dominated objectively (large effect sizes for both TKAT and overshoot rate) yet failed to achieve superiority in any subjective metric. Users found the controller the most environmentally disruptive — holding a rigid physical device creates friction when transitioning between timeline interaction and 3D spatial manipulation, breaking the sense of direct engagement with the environment.</p>
-    <p>Hand-based modalities, though slower, showed clear affordance advantages. Pinch was rated easiest for target finding, likely because direct hand-tracking mimics natural pointing and grasping. However, this naturalness came at the cost of high physical demand, highlighting the well-known "gorilla arm" effect during sustained mid-air gestures. The dial, while slowest, earned the highest willingness-to-use ratings, suggesting that the jog-wheel mental model is intuitive for temporal scrubbing even when mapping gain needs further optimization.</p>
+    <h3 class="section-subtitle">Performance vs. Preference</h3>
+    <p>The most striking result is the disconnect between objective efficiency and subjective experience. The controller dominated objectively (large effect sizes for both TKAT and overshoot rate) yet failed to achieve superiority in any subjective metric. Users found the controller the most environmentally disruptive — holding a rigid physical device creates friction when transitioning between timeline interaction and 3D spatial manipulation.</p>
+    <p>Hand-based modalities, though slower, showed clear affordance advantages. Pinch was rated easiest for target finding, likely because direct hand-tracking mimics natural pointing and grasping. However, this naturalness came at the cost of high physical demand, highlighting the well-known "gorilla arm" effect during sustained mid-air gestures.</p>
 
-    <h3>The Modality-Dependent Role of Sensory Feedback</h3>
-    <p>Our findings challenge the assumption that adding sensory feedback universally improves XR interactions. For controller and pinch — where physical constraints or tactile cues are minimal — feedback acted as a "safety net," confirming target acquisition and increasing confidence. For the dial, however, adding feedback actively decreased performance, suggesting that the dial's strong physical metaphor already provides sufficient sensory grounding, and that additional artificial cues cause sensory overload or mismatch rather than assistance.</p>
+    <h3 class="section-subtitle">The Modality-Dependent Role of Sensory Feedback</h3>
+    <p>Our findings challenge the assumption that adding sensory feedback universally improves XR interactions. For controller and pinch — where physical constraints or tactile cues are minimal — feedback acted as a "safety net," confirming target acquisition and increasing confidence. For the dial, however, adding feedback actively decreased performance, suggesting that the dial's strong physical metaphor already provides sufficient sensory grounding.</p>
 
-    <h3>Design Implications</h3>
+    <h3 class="section-subtitle">Design Implications</h3>
     <div class="disc-item">
       <p class="disc-num">IMPLICATION 01</p>
       <p class="disc-title">Match modality to task demand</p>
@@ -383,19 +344,19 @@
     <div class="disc-item">
       <p class="disc-num">IMPLICATION 02</p>
       <p class="disc-title">Tailor feedback to modality affordances</p>
-      <p class="disc-body">Sensory feedback should supplement missing tactile information (as with bare-hand gestures) rather than being applied uniformly. Modalities with strong inherent metaphors (dials, physical controls) may be harmed by additional artificial cues.</p>
+      <p class="disc-body">Sensory feedback should supplement missing tactile information rather than being applied uniformly. Modalities with strong inherent metaphors may be harmed by additional artificial cues.</p>
     </div>
     <div class="disc-item">
       <p class="disc-num">IMPLICATION 03</p>
       <p class="disc-title">Consider adaptive modality switching</p>
-      <p class="disc-body">Future systems should explore seamlessly transitioning between high-precision controller input and low-friction hand tracking based on the user's immediate context — rapid bulk navigation vs. careful inspection near target keyframes.</p>
+      <p class="disc-body">Future systems should explore seamlessly transitioning between high-precision controller input and low-friction hand tracking based on the user's immediate context.</p>
     </div>
 
-    <h3>Limitations &amp; Future Work</h3>
+    <h3 class="section-subtitle">Limitations &amp; Future Work</h3>
     <div class="disc-item">
       <p class="disc-num">LIMITATION 01</p>
       <p class="disc-title">Small pilot study (N = 6)</p>
-      <p class="disc-body">Limited statistical power means several medium-to-large effects did not reach significance. A larger study with expert designers and richer design histories is needed to confirm observed trends.</p>
+      <p class="disc-body">Limited statistical power means several medium-to-large effects did not reach significance. A larger study with expert designers and richer design histories is needed.</p>
     </div>
     <div class="disc-item">
       <p class="disc-num">LIMITATION 02</p>
@@ -405,24 +366,28 @@
     <div class="disc-item">
       <p class="disc-num">LIMITATION 03</p>
       <p class="disc-title">Hardware latency confounds</p>
-      <p class="disc-body">Quest 3 hand tracking introduces intermittent latency spikes (up to 220.5 ms) and the LED Wall added ~70 ms. Future systems should incorporate latency compensation and more stable hand tracking to isolate gesture effects.</p>
+      <p class="disc-body">Quest 3 hand tracking introduces intermittent latency spikes (up to 220.5 ms) and the LED Wall added ~70 ms. Future systems should incorporate latency compensation.</p>
     </div>
     <div class="disc-item">
       <p class="disc-num">LIMITATION 04</p>
       <p class="disc-title">Uniform cue design</p>
-      <p class="disc-body">Results suggest cue utility is modality-dependent, especially for dial. Future work should explore adaptive cue timing and modality-specific feedback rather than applying the same cue pattern across all inputs.</p>
+      <p class="disc-body">Future work should explore adaptive cue timing and modality-specific feedback rather than applying the same cue pattern across all inputs.</p>
     </div>
-
   </div>
 </section>
 
-<!-- ════════════════════════════════════════
-     07  REFERENCES
-════════════════════════════════════════ -->
-<section class="section" id="references">
+<!-- BIBTEX -->
+<section class="section is-light" id="bibtex">
   <div class="container">
-    <p class="section-label">07 — References</p>
-    <h2>References</h2>
+    <h2 class="section-title">BibTeX</h2>
+    <pre class="bibtex-box">@article{song2025bridging,
+  author    = {Song, Kun-Woo and Kim, Byunghyun and Choi, Yuna},
+  title     = {Bridging Time and Space in 3D Product Design},
+  journal   = {GCT555 3D Interaction Design},
+  year      = {2025},
+}</pre>
+
+    <h2 class="section-title" style="margin-top:56px">References</h2>
     <div class="ref-list">
       <div class="ref-item"><span class="ref-num">[1]</span><span>Paul M. Fitts. 1954. The information capacity of the human motor system in controlling the amplitude of movement. <em>Journal of Experimental Psychology</em> 47, 6, 381–391.</span></div>
       <div class="ref-item"><span class="ref-num">[2]</span><span>Melvyn A. Goodale and A. David Milner. 1992. Separate visual pathways for perception and action. <em>Trends in Neurosciences</em> 15, 1, 20–25.</span></div>
@@ -431,19 +396,23 @@
       <div class="ref-item"><span class="ref-num">[5]</span><span>Laurent Itti and Christof Koch. 2001. Computational modelling of visual attention. <em>Nature Reviews Neuroscience</em> 2, 3, 194–203.</span></div>
       <div class="ref-item"><span class="ref-num">[6]</span><span>Ann M. Larson and Lester C. Loschky. 2009. The contributions of central versus peripheral vision to scene gist recognition. <em>Journal of Vision</em> 9, 10.</span></div>
       <div class="ref-item"><span class="ref-num">[7]</span><span>Joseph J. LaViola et al. 2017. <em>3D User Interfaces: Theory and Practice</em> (2nd ed.). Addison-Wesley.</span></div>
-      <div class="ref-item"><span class="ref-num">[8]</span><span>Zhuoyue Lyu and Per Ola Kristensson. 2026. Objestures: Everyday Objects Meet Mid-Air Gestures for Expressive Interaction. <em>CHI '26</em>. ACM. <a href="https://doi.org/10.1145/3772318.3791742" target="_blank">DOI</a></span></div>
-      <div class="ref-item"><span class="ref-num">[9]</span><span>Gary Perelman et al. 2025. 3D timelines in VR: Adaptive speed for 3D data navigation on a concave timeline. <em>IJHCS</em>.</span></div>
-      <div class="ref-item"><span class="ref-num">[10]</span><span>Xizi Wang et al. 2026. To Slide or Not to Slide: Exploring Techniques for Comparing Immersive Videos. <em>arXiv:2602.19048</em>. <a href="https://arxiv.org/abs/2602.19048" target="_blank">arXiv</a></span></div>
-      <div class="ref-item"><span class="ref-num">[11]</span><span>Yue Yang et al. 2026. Multimodal Feedback for Handheld Tool Guidance: Combining Wrist-Based Haptics with Augmented Reality. <em>arXiv:2601.12037</em>. <a href="https://arxiv.org/abs/2601.12037" target="_blank">arXiv</a></span></div>
-      <div class="ref-item"><span class="ref-num">[12]</span><span>Sheng Wang et al. 2026. User-reconfigurable Haptic Feedback in Virtual Reality for Material Perception. <em>CHI '26</em>. ACM.</span></div>
+      <div class="ref-item"><span class="ref-num">[8]</span><span>Zhuoyue Lyu and Per Ola Kristensson. 2026. Objestures: Everyday Objects Meet Mid-Air Gestures. <em>CHI '26</em>. <a href="https://doi.org/10.1145/3772318.3791742" target="_blank">DOI</a></span></div>
+      <div class="ref-item"><span class="ref-num">[9]</span><span>Gary Perelman et al. 2025. 3D timelines in VR. <em>IJHCS</em>.</span></div>
+      <div class="ref-item"><span class="ref-num">[10]</span><span>Xizi Wang et al. 2026. To Slide or Not to Slide. <em>arXiv:2602.19048</em>. <a href="https://arxiv.org/abs/2602.19048" target="_blank">arXiv</a></span></div>
+      <div class="ref-item"><span class="ref-num">[11]</span><span>Yue Yang et al. 2026. Multimodal Feedback for Handheld Tool Guidance. <em>arXiv:2601.12037</em>. <a href="https://arxiv.org/abs/2601.12037" target="_blank">arXiv</a></span></div>
+      <div class="ref-item"><span class="ref-num">[12]</span><span>Sheng Wang et al. 2026. User-reconfigurable Haptic Feedback in VR. <em>CHI '26</em>. ACM.</span></div>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <div class="container">
-    <p>Bridging Time and Space in 3D Product Design — Kun-Woo Song, Byunghyun Kim, Yuna Choi — KAIST GSCT 2025</p>
-  </div>
+  <p>
+    Bridging Time and Space in 3D Product Design · Kun-Woo Song, Byunghyun Kim, Yuna Choi · KAIST GSCT 2025
+  </p>
+  <p style="margin-top:8px">
+    Website template inspired by <a href="https://nerfies.github.io" target="_blank">Nerfies</a>.
+  </p>
 </footer>
 
 <script src="js/main.js"></script>
