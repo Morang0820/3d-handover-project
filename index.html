@@ -49,7 +49,7 @@
         Paper PDF
       </a>
       <!-- ✏️ href를 실제 GitHub repo URL로 교체하세요 -->
-      <a href="https://github.com/EDIT_THIS/REPO" class="btn btn-secondary" target="_blank">
+      <a href="https://github.com/kwooS/3DIDprojectDialScrubber" class="btn btn-secondary" target="_blank">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         Code
       </a>
@@ -77,17 +77,17 @@
     <figcaption><strong>Figure 1.</strong> Project overview showing the challenge, proposed solution, user flow, and technology enablers. The system supports 3D product designers in reviewing spatial design history through a 2D-to-3D interaction flow.</figcaption>
   </figure>
 
-  <!-- Demo video -->
-  <!-- ✏️ 로컬 MP4 사용 시: video 태그의 주석을 해제하세요 -->
-  <!-- ✏️ YouTube 사용 시: iframe 태그의 주석을 해제하고 VIDEO_ID를 교체하세요 -->
-  <div class="video-wrap">
-    <!-- <video controls><source src="assets/demo.mp4" type="video/mp4"></video> -->
-    <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe> -->
-    <div class="teaser-img-placeholder" style="min-height:200px">
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-      <span>Demo video를 추가하세요<br>로컬: assets/demo.mp4 / YouTube: iframe embed</span>
+  <!-- Demo videos (side by side) -->
+  <!-- ✏️ YouTube 영상 ID를 아래 두 곳에 넣으세요 (THIRD_PERSON_VIDEO_ID, FIRST_PERSON_VIDEO_ID) -->
+  <div class="video-pair">
+    <div class="video-item">
+      <iframe src="https://youtu.be/npCW8I55c1s" allowfullscreen></iframe>
+      <p class="video-caption"><strong>Third-person view.</strong> System walkthrough as seen from outside the interaction space.</p>
     </div>
-    <p class="video-caption"><strong>Demo video.</strong> System walkthrough showing the 2D-to-3D interaction flow on the LED Wall + Meta Quest 3 setup.</p>
+    <div class="video-item">
+      <iframe src="https://youtu.be/owV9Q8sfAHo" allowfullscreen></iframe>
+      <p class="video-caption"><strong>First-person view.</strong> HMD passthrough perspective during timeline navigation and 3D inspection.</p>
+    </div>
   </div>
 
 </div><!-- /container -->

@@ -99,21 +99,27 @@ h1 {
   line-height: 1.6;
 }
 
-/* ── demo video ── */
-.video-wrap {
-  margin: 24px 0 48px;
+/* ── demo videos (side by side) ── */
+.video-pair {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 16px; margin: 24px 0 48px;
+}
+.video-item {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 12px; overflow: hidden;
 }
-.video-wrap video,
-.video-wrap iframe {
+.video-item video,
+.video-item iframe {
   width: 100%; display: block;
-  aspect-ratio: 16 / 9; border: none;
-  background: #000;
+  aspect-ratio: 16 / 9; background: #000; border: none;
 }
 .video-caption {
-  padding: 12px 20px; font-size: 13px;
+  padding: 12px 16px; font-size: 13px;
   color: var(--text-muted); border-top: 1px solid var(--border);
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .video-pair { grid-template-columns: 1fr; }
 }
 
 /* ── sections ── */
