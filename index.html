@@ -49,7 +49,7 @@
         Paper PDF
       </a>
       <!-- ✏️ href를 실제 GitHub repo URL로 교체하세요 -->
-      <a href="https://github.com/kwooS/3DIDprojectDialScrubber" class="btn btn-secondary" target="_blank">
+      <a href="https://github.com/EDIT_THIS/REPO" class="btn btn-secondary" target="_blank">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         Code
       </a>
@@ -68,12 +68,7 @@
 
   <!-- Teaser figure -->
   <figure class="teaser">
-    <!-- ✏️ 이미지 추가 시: 아래 주석 해제하고 placeholder div 삭제 -->
-    <!-- <img src="assets/teaser.png" alt="Project overview" /> -->
-    <div class="teaser-img-placeholder">
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      <span>assets/teaser.png — Figure 1 이미지를 추가하세요</span>
-    </div>
+    <img src="assets/fig_overview.png" alt="Project overview showing the challenge, proposed solution, user flow, and technology enablers." />
     <figcaption><strong>Figure 1.</strong> Project overview showing the challenge, proposed solution, user flow, and technology enablers. The system supports 3D product designers in reviewing spatial design history through a 2D-to-3D interaction flow.</figcaption>
   </figure>
 
@@ -81,11 +76,11 @@
   <!-- ✏️ YouTube 영상 ID를 아래 두 곳에 넣으세요 (THIRD_PERSON_VIDEO_ID, FIRST_PERSON_VIDEO_ID) -->
   <div class="video-pair">
     <div class="video-item">
-      <iframe src="https://youtu.be/npCW8I55c1s" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/THIRD_PERSON_VIDEO_ID" allowfullscreen></iframe>
       <p class="video-caption"><strong>Third-person view.</strong> System walkthrough as seen from outside the interaction space.</p>
     </div>
     <div class="video-item">
-      <iframe src="https://youtu.be/owV9Q8sfAHo" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/FIRST_PERSON_VIDEO_ID" allowfullscreen></iframe>
       <p class="video-caption"><strong>First-person view.</strong> HMD passthrough perspective during timeline navigation and 3D inspection.</p>
     </div>
   </div>
@@ -140,8 +135,7 @@
 
     <!-- Interaction flow figure -->
     <figure class="fig">
-      <!-- ✏️ <img src="assets/fig_interaction_flow.png" alt="Interaction flow diagram" /> -->
-      <div class="fig-ph">assets/fig_interaction_flow.png</div>
+      <img src="assets/fig_interaction_flow.png" alt="Interaction flow diagram" />
       <figcaption><strong>Figure 3.</strong> Interaction flow diagram: the user begins with 2D overview scrolling on the LED Wall, navigates via mid-air dial control, and receives visual and haptic cues at keyframe events. When closer inspection is needed, the user pulls content into a 3D view and returns to 2D on completion.</figcaption>
     </figure>
 
@@ -151,8 +145,7 @@
 
     <!-- 3D UI placement figure -->
     <figure class="fig">
-      <!-- ✏️ <img src="assets/fig_3dui_diagram.png" alt="3D UI placement diagram" /> -->
-      <div class="fig-ph">assets/fig_3dui_diagram.png</div>
+      <img src="assets/fig_3dui_diagram.png" alt="3D UI placement diagram" />
       <figcaption><strong>Figure 2.</strong> 3D UI placement diagram showing the Video Time Bar in the parafoveal zone at 1.8–2.2 m, the LED Wall at 2.5–3.0 m, and baseline interaction methods (pinch, controller, dial metaphor).</figcaption>
     </figure>
 
@@ -199,29 +192,13 @@
     <p>The prototype implements the full interaction pipeline on a physical LED Wall with a Meta Quest 3 HMD (Unity 6000.3.4f1). Three input methods are compared: pinch gesture, controller, and the proposed mid-air dial (wrist rotation). All three control the same 3D timeline bar. Haptic feedback is delivered via bHaptics Tactgloves.</p>
     <p>The dial gesture evolved from an initial design using crunched fingers with slight flexion, which caused hand-tracking errors with haptic gloves, to a final design using pinch (index and thumb flexion) for more reliable tracking. The pull-to-spawn / push-to-dismiss interactions are triggered via pinch + z-axis hand movement.</p>
 
-    <div class="proto-grid">
-      <div class="proto-item">
-        <!-- ✏️ <img src="assets/proto-pinch.jpg" alt="Pinch gesture" /> -->
-        <div class="proto-img-ph">assets/proto-pinch.jpg</div>
-        <p class="proto-label">Pinch gesture</p>
-      </div>
-      <div class="proto-item">
-        <!-- ✏️ <img src="assets/proto-controller.jpg" alt="Controller" /> -->
-        <div class="proto-img-ph">assets/proto-controller.jpg</div>
-        <p class="proto-label">Controller</p>
-      </div>
-      <div class="proto-item">
-        <!-- ✏️ <img src="assets/proto-dial.jpg" alt="Dial metaphor" /> -->
-        <div class="proto-img-ph">assets/proto-dial.jpg</div>
-        <p class="proto-label">Dial metaphor</p>
-      </div>
-    </div>
-    <p style="margin-top:14px; font-size:13px; color:var(--text-muted)"><em>Left: pinch gesture. Center: controller. Right: proposed mid-air dial. All three control the same 3D timeline bar.</em></p>
-
+    <figure class="fig" style="margin-top:24px">
+      <img src="assets/fig_prototype_input.png" alt="Three interaction methods: pinch, controller, dial metaphor" />
+      <figcaption><strong>Figure 4.</strong> Prototype screenshots of the three interaction methods: (left) pinch gesture, (center) controller, (right) dial metaphor. All three control the same 3D timeline bar.</figcaption>
+    </figure>
     <!-- Feedback states figure -->
     <figure class="fig" style="margin-top:28px">
-      <!-- ✏️ <img src="assets/fig_prototype_feedback.png" alt="Multimodal feedback states" /> -->
-      <div class="fig-ph">assets/fig_prototype_feedback.png</div>
+      <img src="assets/fig_prototype_feedback.png" alt="Multimodal feedback states" />
       <figcaption><strong>Figure 5.</strong> Prototype screenshots of multimodal feedback states. Visual: normal (white), target reached (green), target overshot (orange), boundary (red). Haptic: fade-in/out patterns per event type.</figcaption>
     </figure>
 
